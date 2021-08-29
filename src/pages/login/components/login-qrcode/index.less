@@ -1,0 +1,59 @@
+@qrCodeSize: 180px;
+
+.login-qrcode {
+  width: 100%;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: relative;
+
+  &__img {
+    border: 1px solid #e9ecf0;
+    width: @qrCodeSize;
+    height: @qrCodeSize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .QRCode {
+      padding: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__info {
+    position: absolute;
+    width: @qrCodeSize;
+    height: @qrCodeSize;
+    background-color: hsla(0, 0%, 100%, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .refresh {
+      height: 32px;
+      line-height: 32px;
+      background-color: #ff4d4d;
+      padding: 0 10px;
+      color: #fff;
+    }
+  }
+
+  &__tips {
+    text-align: center;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+    color: #5c626b;
+    width: 100%;
+  }
+}

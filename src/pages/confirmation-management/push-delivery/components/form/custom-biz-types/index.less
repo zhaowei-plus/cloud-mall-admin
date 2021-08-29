@@ -1,0 +1,51 @@
+.custom-biz-types {
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    margin-bottom: 4px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    .item {
+      line-height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 4px;
+
+      & + .item {
+        margin-top: 8px;
+      }
+
+      &__title {
+        width: 30%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      &__content {
+        width: 60%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      &__operation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+
+        &:hover {
+          color: red;
+        }
+      }
+    }
+  }
+}

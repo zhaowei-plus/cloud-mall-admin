@@ -1,0 +1,91 @@
+.material {
+  width: 436px;
+  height: 130px;
+  padding: 20px;
+  background: #fff;
+  border: 2px solid #e9ecf0;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+
+  &.selected {
+    border-color: #488ff9;
+  }
+
+  &__img {
+    width: 90px;
+    height: 90px;
+    display: grid;
+    align-items: center;
+
+    img {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  &__info {
+    width: 300px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    padding-left: 11px;
+    justify-content: space-between;
+
+    .info-row {
+      font-size: 12px;
+      height: 20px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    & > span {
+      font-size: 12px;
+      height: 20px;
+      line-height: 20px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .title {
+      font-size: 16px;
+      height: 20px;
+      line-height: 20px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__selected {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 58px;
+    height: 58px;
+    border-bottom-right-radius: 4px;
+    background: linear-gradient(
+      45deg,
+      transparent,
+      transparent 50%,
+      #488ff9 50%,
+      #488ff9
+    );
+
+    .tick {
+      position: absolute;
+      top: 6px;
+      right: 10px;
+      width: 12px;
+      height: 18px;
+      transform: rotate(45deg);
+      color: #fff;
+      border-right: 2px solid;
+      border-bottom: 2px solid;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.upload-model {
+  &__header {
+    margin-bottom: 10px;
+
+    a {
+      margin-left: 20px;
+    }
+  }
+
+  &__content {
+    .ant-upload-drag {
+      height: 72px;
+      background-color: #fff;
+    }
+
+    .ant-upload-list-text {
+      &:before {
+        width: 100%;
+        height: 32px;
+        line-height: 32px;
+        content: '选择Microsoft Office Excel文件（支持xls、xlsx格式）';
+        color: red;
+        font-size: 12px;
+      }
+
+      & > div {
+        display: none;
+      }
+    }
+
+    .file-list {
+      padding: 4px;
+      line-height: 22px;
+      width: 100%;
+      color: rgba(0, 0, 0, 0.65);
+      background-color: #00000010;
+    }
+  }
+}

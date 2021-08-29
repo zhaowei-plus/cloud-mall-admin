@@ -1,0 +1,50 @@
+.batch-import {
+  &__header {
+    height: 32px;
+    line-height: 32px;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
+    max-height: 120px;
+    overflow: auto;
+    border: 1px solid #e9ecf0;
+    padding: 10px;
+    margin-top: 10px;
+
+    .firm {
+      height: 32px;
+      width: auto;
+      line-height: 32px;
+      font-size: 12px;
+      color: #000000;
+      padding: 0 4px;
+      border: 1px solid #e9ecf0;
+      border-radius: 4px;
+      background-color: #ffffff;
+      opacity: 0.85;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      & > .title {
+        height: 12px;
+        line-height: 12px;
+        font-size: 12px;
+        font-weight: 400;
+        color: #000000;
+        margin-right: 4px;
+      }
+
+      .anticon {
+        font-size: 12px;
+        cursor: pointer;
+        margin-left: 4px;
+        color: gray;
+      }
+    }
+  }
+}

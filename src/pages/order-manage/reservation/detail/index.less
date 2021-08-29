@@ -1,0 +1,38 @@
+.reservation-detail {
+  .ant-card {
+    .ant-card-head {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+
+  .order-detail,
+  .reserve-info {
+    .ant-card-body {
+      display: grid;
+      gap: 4px;
+      grid-template-columns: repeat(3, 1fr);
+      &:before {
+        display: none;
+      }
+
+      .ant-form-item {
+        display: grid;
+        grid-template-columns: 120px minmax(240px, 320px);
+
+        .ant-picker,
+        input {
+          max-width: 240px;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  //.order-info .ant-card-body {
+  //  grid-template-columns: repeat(3, 1fr);
+  //}
+  //.reservation-info .ant-card-body {
+  //  grid-template-columns: repeat(3, 1fr);
+  //}
+}

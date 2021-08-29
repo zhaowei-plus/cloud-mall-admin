@@ -1,0 +1,36 @@
+.order-upload {
+  display: flex;
+  flex-direction: column;
+
+  &__input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+
+  &__value {
+    line-height: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    .item {
+      width: 100%;
+      display: flex;
+
+      &__label {
+        flex: 1;
+      }
+
+      &__operation {
+        cursor: pointer;
+
+        &:hover {
+          color: red;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,177 @@
+// ma mh mv mt mb ml mr
+// pa ph pv pt pb pl pr
+@baseDistance: 8px;
+
+.generate-mp(@i: 1) when(@i <=10) {
+  .ma@{i} {
+    margin: @i * @baseDistance;
+  }
+
+  .mh@{i} {
+    margin-left: @i * @baseDistance;
+    margin-right: @i * @baseDistance;
+  }
+
+  .mv@{i} {
+    margin-top: @i * @baseDistance;
+    margin-bottom: @i * @baseDistance;
+  }
+
+  .mt@{i} {
+    margin-top: @i * @baseDistance;
+  }
+
+  .mb@{i} {
+    margin-bottom: @i * @baseDistance;
+  }
+
+  .ml@{i} {
+    margin-left: @i * @baseDistance;
+  }
+
+  .mr@{i} {
+    margin-right: @i * @baseDistance;
+  }
+
+  .pa@{i} {
+    padding: @i * @baseDistance;
+  }
+
+  .ph@{i} {
+    padding-left: @i * @baseDistance;
+    padding-right: @i * @baseDistance;
+  }
+
+  .pv@{i} {
+    padding-top: @i * @baseDistance;
+    padding-bottom: @i * @baseDistance;
+  }
+
+  .pt@{i} {
+    padding-top: @i * @baseDistance;
+  }
+
+  .pb@{i} {
+    padding-bottom: @i * @baseDistance;
+  }
+
+  .pl@{i} {
+    padding-left: @i * @baseDistance;
+  }
+
+  .pr@{i} {
+    padding-right: @i * @baseDistance;
+  }
+
+  .generate-mp(@i + 1);
+}
+
+.generate-mp();
+
+.flex {
+  display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.flex-none {
+  flex: none;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.flex-auto {
+  flex: 1 1 auto;
+  min-width: 0;
+  /* 1 */
+  min-height: 0;
+  /* 1 */
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.fn {
+  float: none;
+}
+
+.tl {
+  text-align: left;
+}
+
+.tr {
+  text-align: right;
+}
+
+.tc {
+  text-align: center;
+}
+
+.tj {
+  text-align: justify;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: '';
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.pointer {
+  cursor: pointer;
+}

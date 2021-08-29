@@ -1,0 +1,78 @@
+@headTitleHeight: 32px;
+
+// 新增活动
+.material {
+  &__content {
+    padding-top: 0 !important;
+
+    .form-tips {
+      line-height: 36px;
+      margin-left: 20px;
+      margin-bottom: 14px;
+      color: gray;
+    }
+
+    .ant-card {
+      .ant-card-head {
+        .ant-card-head-title {
+          line-height: @headTitleHeight;
+          font-size: 16px;
+          color: rgba(38, 42, 48, 1);
+        }
+      }
+
+      .ant-card-body {
+      }
+    }
+
+    .config-header {
+      .title {
+        font-size: 16px;
+        color: rgba(38, 42, 48, 1);
+        line-height: @headTitleHeight;
+      }
+
+      .notice {
+        margin-left: 40px;
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(149, 155, 163, 1);
+        line-height: 14px;
+      }
+    }
+
+    .picture-config {
+      & > .ant-card-body {
+        &:before {
+          display: none;
+        }
+
+        padding-left: 8%;
+        display: grid;
+        grid-template-columns: repeat(6, 120px);
+        grid-auto-flow: row;
+        gap: 4%;
+      }
+    }
+
+    table {
+      width: 80%;
+      th {
+        background: #ebecf0;
+        padding: 10px;
+      }
+
+      tbody {
+        td {
+          padding: 10px;
+
+          .ant-form-item {
+            max-height: 32px;
+            overflow: hidden;
+            margin-bottom: 0 !important;
+          }
+        }
+      }
+    }
+  }
+}

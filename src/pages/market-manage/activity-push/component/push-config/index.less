@@ -1,0 +1,28 @@
+.push-config {
+  .material-empty {
+    text-align: center;
+    height: 180px;
+    line-height: 180px;
+  }
+
+  .push-way-content {
+    padding-top: 6px;
+    display: grid;
+    grid-template-columns: repeat(6, 120px);
+    gap: 30px;
+
+    .text-box-words {
+      display: none;
+    }
+
+    .text-box-field {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:empty {
+        display: none;
+      }
+    }
+  }
+}

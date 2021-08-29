@@ -1,0 +1,58 @@
+.search {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  border: 1px solid #e9ecf0;
+  padding: 10px 0 4px;
+
+  .ant-form-item {
+    display: grid;
+    grid-template-columns: 120px 250px;
+    margin: 0 4px 10px;
+
+    &:before {
+      display: none;
+    }
+
+    .ant-form-item-label {
+      height: 32px;
+      padding-left: 10px;
+      line-height: 32px;
+      text-align: right;
+    }
+
+    .ant-form-item-control {
+      height: 32px;
+      line-height: 32px;
+
+      .ant-input-number,
+      .ant-picker,
+      .ant-select,
+      .ant-calendar-picker,
+      .ant-form-item-control-input {
+        width: 100%;
+        min-width: 200px;
+      }
+    }
+  }
+
+  &__actions {
+    flex: 1;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+
+    .button-group {
+      height: 32px;
+      line-height: 32px;
+      width: 180px;
+      display: flex;
+
+      button {
+        width: 70px !important;
+        text-align: center;
+      }
+    }
+  }
+}

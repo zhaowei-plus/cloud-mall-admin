@@ -1,0 +1,27 @@
+.category {
+  flex: 1;
+  height: 48px;
+  line-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-right: 40px;
+  color: #ffffff !important;
+
+  .item {
+    margin: 0 10px;
+    height: 100%;
+    width: 100px;
+    color: #ffffff;
+    opacity: 0.8;
+    font-size: 14px;
+    display: inline-block;
+    text-align: center;
+    border-bottom: 2px solid transparent;
+
+    &.active {
+      opacity: 1;
+      border-bottom-color: #ffffff;
+    }
+  }
+}

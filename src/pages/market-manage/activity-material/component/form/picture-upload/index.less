@@ -1,0 +1,69 @@
+.picture-upload {
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+
+  .ant-upload {
+    margin: 0 !important;
+    width: 120px !important;
+    height: 120px !important;
+    position: relative;
+  }
+
+  img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .anticon {
+    font-size: 32px;
+    color: rgba(149, 155, 163, 1);
+  }
+
+  & > .tips {
+    margin-top: 4px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  & > .message {
+    text-align: center;
+    margin-top: 4px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: rgba(149, 155, 163, 1);
+  }
+
+  &__operation {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    white-space: nowrap;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      opacity: 0.4;
+    }
+
+    .anticon {
+      font-size: 18px;
+      color: #fff;
+      margin: 4px;
+    }
+  }
+}

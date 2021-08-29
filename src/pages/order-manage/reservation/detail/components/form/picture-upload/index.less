@@ -1,0 +1,49 @@
+@pictureWidth: 120px;
+@pictureHeight: 100px;
+
+.picture {
+  display: flex;
+  flex-direction: column;
+  //height: 200px;
+  width: 120px;
+
+  .ant-upload {
+    width: @pictureWidth !important;
+    height: @pictureHeight !important;
+  }
+
+  .title {
+    margin-top: 15px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .message {
+    margin-top: 4px;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(149, 155, 163, 1);
+  }
+
+  .picture-upload {
+    width: @pictureWidth;
+    height: @pictureHeight + 10px;
+    position: relative;
+
+    .ant-upload {
+      padding: 2px;
+    }
+
+    .ant-upload-text {
+      opacity: 0.6;
+    }
+
+    &__preview {
+      width: 100%;
+      height: auto;
+      max-height: @pictureHeight;
+    }
+  }
+}
